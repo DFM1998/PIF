@@ -1,0 +1,181 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  height: 100%;
+  font-family: "Arial", Times, sans-serif;
+  background: linear-gradient(-45deg, #657fca, #00d4c6, #23A6D5, #23D5AB);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+#article{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  min-height: 97.8vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  min-width: 605px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .9) ;
+  box-shadow: 0px 0px 40px 5px grey;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table td {
+  overflow-wrap: break-word;
+  border-left: 1px solid #a6a6a6;
+  padding: 8px;
+}
+table th {
+  padding: 8px;
+  border-left: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
+}
+table th:first-child {
+  border-left: 0;
+}
+table td:first-child {
+  border-left: 0;
+}
+table td:last-child {
+  border-bottom: 0;
+}
+
+table {
+  table-layout: fixed;
+  word-wrap:break-word;
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  background-color: #DDDDDD;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+
+table tr{
+  text-align: center;
+}
+
+#footer {
+  color: white;
+  border: solid #3B4856 10px;
+  border-radius: 0 0 10px 10px;
+  margin: -10px;
+  margin-top: 5px;
+  background: #3B4856;
+  height: 50px;
+  padding: 5px;
+}
+
+
+
+.erfolgreichok{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  border: solid grey 1px;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 3px;
+  background-color: #c6d7e2;
+  color: green;
+}
+.erfolgreicherror{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  border: solid grey 1px;
+  border-radius: 3px;
+  padding: 3px;
+  margin: 3px;
+  background-color: #c6d7e2;
+  color: red;
+}
+
+.updateTable{
+  background-color: white;
+  padding: 55px;
+  margin: auto;
+  margin-top: 60px;
+  width: 50%;
+}
+
+.updateTable tr:nth-child(odd){
+  background-color: #CCC;
+}
+#deleteAlert{
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #3c763d;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+  margin-top: 10px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

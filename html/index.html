@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>REPIF</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/body.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/login.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/button.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/nav.css">
+  </head>
+  <body>
+    <div id="login" style="display:none;">
+      <h1>REPIF - 2018/2019</h1>
+      <hr>
+      <div id="LoginAlert">
+      </div>
+      <h2>Login</h2>
+      <input type="username" name="benutzername" id="benutzername" class="loginInput" placeholder="Username"><br>
+      <input type="password" name="passwort" class="loginInput" id="passwort" placeholder="Password"><br>
+      <button type="submit" value="anmeldeButton" id="LoginButton">Login</button>
+    </div>
+    <div id="article" style="display:none;">
+      <div id="navigation" style="display:none;">
+        <h1 id='titel'>REPIF - 2018/2019</h1>
+        <button type="button" name="button" id="editAccountButton">Edit account</button>
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="ausgabeAccount">
+            </div>
+          </div>
+
+        </div>
+        <ul>
+          <li><a href="#rundgaenge" id="nav1">Rundgänge</a></li>
+          <li><a href="#durchgefuerte" id="nav2">Durchgeführte Rund.</a></li>
+          <li><a href="#benutzer" id="nav3">Mitarbeiter</a></li>
+          <li><a href="#token" id="nav4">Tokens</a></li>
+          <li><a href="#land" id="nav5">Land</a></li>
+          <li><a href="#filialen" id="nav6">Filialen</a></li>
+          <li><a href="#kunde" id="nav7">Kunde</a></li>
+          <li><a href="" id="logout">Logout</a></li>
+        </ul>
+      </div>
+      <div id="content" style="display:none;">
+        <div id="deleteAlert">
+        </div>
+        <div id="to_load_content">
+        </div>
+      </div>
+      <div id="footer">
+        Matos Freitas David
+      </div>
+    </div>
+  </body>
+  <script src="./JS/jquery.js"></script>
+  <script src="./JS/login_check.js"></script>
+  <script src="./JS/logout.js"></script>
+  <script src="./JS/nav.js"></script>
+  <script src="./JS/inc.erstelltInhalt.js"></script>
+  <script src="./JS/mitarbeiter.js"></script>
+  <script src="./JS/token.js"></script>
+  <script src="./JS/rundgang.js"></script>
+  <script src="./JS/filialen.js"></script>
+  <script src="./JS/kunde.js"></script>
+  <script>
+  // to use back button of the browser
+    $(document).ready(function(){
+      /*window.onhashchange = function() {
+       location.reload();
+     }*/
+     //$(window).on('popstate', function(){
+       //console.log("test");
+       //location.reload();
+     //});
+    });
+  </script>
+</html>

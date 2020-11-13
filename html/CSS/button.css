@@ -1,0 +1,56 @@
+.mitarbeiterDel, .tokenDel, .LandDel, .filialenDel,.kundeDel{
+  background-color: #3498DB;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition-duration: 0.5s;
+}
+.mitarbeiterDel:hover, .tokenDel:hover, .kundeDel:hover, .LandDel:hover, .filialenDel:hover{
+  background-color: #0074D9;
+  transition-duration: 0.5s;
+}
+
+.mitarbeiterUpd, .tokenUpd, .filialenUpd, .KundeUpd{
+  background-color: #3498DB;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition-duration: 0.5s;
+}
+.mitarbeiterUpd:hover, .tokenUpd:hover, .filialenUpd:hover, .KundeUpd:hover{
+  background-color: #0074D9;
+  transition-duration: 0.5s;
+}
+
+.button{
+  background-color: #3498DB;
+  color: white;
+  padding: 8px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition-duration: 0.5s;
+}
+.button:hover{
+  background-color: #0074D9;
+  transition-duration: 0.5s;
+}
+#titel{
+  display: inline-block;
+}
+#editAccountButton{
+  float: right;
+}
